@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wordcounter.HelloController">
+   <children>
+      <VBox prefHeight="1020.0" prefWidth="1920.0">
+         <children>
+            <Label text="yee ass counter písmenek  napíču udělanej protože scene builder nebuilduje" />
+            <Button mnemonicParsing="false" onMouseClicked="#onOpenFIleClick" prefHeight="25.0" prefWidth="101.0" text="Otevřít soubor" />
+            <Button fx:id="graphChanger" mnemonicParsing="false" onMouseClicked="#changeGraph" prefHeight="25.0" prefWidth="300.0" text="Změnit grafy na %" />
+         </children>
+      </VBox>
+      <VBox layoutY="100" prefHeight="500.0" prefWidth="1920.0">
+         <children>
+            <BarChart fx:id="characterGraph">
+               <xAxis>
+                  <CategoryAxis animated="false" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </VBox>
+      <VBox layoutY="500" prefHeight="500.0" prefWidth="1920.0">
+         <children>
+            <BarChart fx:id="wordGraph">
+               <xAxis>
+                  <CategoryAxis animated="false" side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </VBox>
+
+   </children>
+</AnchorPane>
